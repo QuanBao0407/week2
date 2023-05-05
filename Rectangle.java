@@ -1,12 +1,34 @@
-package shape;
+package GeometricObject;
 
-public class Rectangle extends Shape {
+public class Rectangle implements GeometricObject {
+    double width;
+    double length;
     @Override
-    protected double getArea() {
+    public double getArea() {
         return 0;
     }
+
     @Override
-    protected double getPerimeter() {
+    public double getPerimeter() {
         return 0;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+    public String toString(){
+        return "okela";
     }
 }

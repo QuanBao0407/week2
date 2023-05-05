@@ -1,17 +1,27 @@
-package shape;
+package GeometricObject;
 
-public class Circle extends Shape {
+public class Circle implements GeometricObject {
+    double radius;
 
     @Override
-    protected double getArea() {
+    public double getArea() {
         return 0;
     }
 
     @Override
-    protected double getPerimeter() {
+    public double getPerimeter() {
         return 0;
     }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
     public String toString(){
-        return "màu "+color+" filled :"+"filled";
+        return "cút"+getRadius();
     }
 }
